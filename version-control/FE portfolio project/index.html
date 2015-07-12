@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale =1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Project 1 Build a portfolio site</title>
 
-</head>
-<body>
-	<div class="container">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet"> 
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section class="top">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="logo" src="http://placehold.it/120x81">
+          </div>
+          <div class="col-md-8">
+            <h1 id="name">Michael A. Fischer</h1>
+            <p id="positionTitle">Front-End Developer</p>
+          </div> 
+        </div> 
+        <hr> 
+      </section> <!-- class top -->
 
-	</div>	
-</body>
+      <section class="media">
+        <div  class="row">
+          <div id="mainPic" class="col-md-12">
+            <img id="logo" src="http://placehold.it/1200x300" alt="Generic placeholder image">
+          </div>
+      </section> <!--   -->  
+
+      <section class="featuredWork">
+        <div class="row">
+        <div class="col-md-12">
+            <h2 id="subtitle">Featured Work</h2>
+        </div>  
+        <div id="image" class="col-md-4">
+          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+          <h3 id="fw">APPIFY</h3>
+          <p id="fw">https://github.com/udacity/Appify/</p>
+        </div><!-- /.col-lg-4 -->
+        <div id="image" class="col-md-4">
+          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+          <h3 id="fw">SUNFLOWER</h3>
+          <p id="fw">https://github.com/udacity/Sunflower/</p>          
+        </div><!-- /.col-lg-4 -->
+        <div id="image" class="col-md-4">
+          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+          <h3 id="fw">BOKEH</h3>
+          <p id="fw">https://github.com/udacity/Bokeh/</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      </section> <!-- class featuredWork -->  
+
+      <section class="footer">
+        <div id="social">
+          <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook">Facebook</a>
+          <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a>
+          <a href="http://digg.com/submit?phase=2&amp;url=https%3A%2F%2Fgithub.com%2Fudacity%2Fresponsive-images&amp;title=Udacity%20nano%20course%3A%20Responsive%20Images&amp;bodytext=Responsive%20images%20for%20your%20sites%20and%20web%20apps&amp;topic=tech_news" class="zocial-digg">Digg</a>
+        </div>
+        <br><br>
+      </section>  <!-- class footer --> 
+   
+    </div> <!-- class container-fluid -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
 
