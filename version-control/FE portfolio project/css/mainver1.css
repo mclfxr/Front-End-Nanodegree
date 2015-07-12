@@ -1,0 +1,112 @@
+/* CSS FILE */
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+@media screen and (max-width: 600) {
+	.col-md-4 {
+		display: flex;
+	    flex-wrap: wrap;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600) and (max-width: 1024) {
+	.col-md-4 {
+		display: flex;
+	    flex-wrap: wrap;
+		width: 33%;
+	}
+}
+
+
+body {
+	margin: auto;
+	
+	width:100%;
+}
+
+section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+hr {
+	border: none;
+	background-color: red;
+	margin-top: 1px;
+	width: 100%;
+	height: 2px;
+}
+
+h1, h2{
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+div#social {
+  line-height: 2em;
+  text-align: center;
+}
+
+.header {
+	padding-top: 2px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mainTitle {
+	padding-top: 1px;
+	text-align: right;
+	width: 100%;
+}
+
+.pictureArea {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.titleBar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.featuredWorkSection {
+	width: 100%;	
+}
+
+img#logo {
+	margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.col-md-12 {
+	width: 100%;
+	
+}	
+
+.col-md-10 {
+	width: 90%;
+	
+}
+.col-md-8 {
+	width: 66.67%;
+	
+}
+
+.col-md-2 {
+	width: 10%;
+	
+}
+
+footer {
+  margin: 0 auto;
+  width: 800px;
+
+}
