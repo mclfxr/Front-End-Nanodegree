@@ -1,0 +1,73 @@
+/* CSS FILE */
+
+
+[class*="zocial-"]:before {
+  color: LightSeaGreen;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+body {
+	font-family: 'Roboto Slab', serif;
+	color: #747704;
+	/*background-color: #D1D1AB;*/
+
+}
+
+img#logo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+h1#name {
+	padding-top: 9px;
+	margin: 0;
+	text-align: right;	
+}
+h1#name {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	color: #747704;
+}
+p#positionTitle {
+	font-family: 'Roboto Slab', serif;
+	color: #747704;
+}
+hr {
+	margin-top: 0;
+}
+h2#subtitle{
+	text-align: left;
+	font-weight: 300;
+	color: #BCBBBB;
+}
+h3#fw {
+	text-align: center;
+}
+p {
+	text-align: right;
+	margin-bottom: 20px;
+}
+p#fw {
+	text-align: center;
+}
+div#mainPic {
+	text-align: center;
+}
+div#image {
+	text-align: center;
+	font-weight: 100;
+	color: #747704;
+}
+div#social {
+	text-align: center;
+}
+/*
+.col-md-4 {
+	border: 1px solid blue;
+}
+
+.col-md-8 {
+	border: 1px solid red;
+}
+*/
