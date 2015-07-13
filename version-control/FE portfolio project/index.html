@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Project 1 Build a portfolio site</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet"> 
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,7 +23,12 @@
       <section class="top">
         <div class="row">
           <div class="col-md-4">
-            <img id="logo" src="http://placehold.it/120x81">
+            <picture id="logo">
+              <source id="logo" media="(min-width: 100) and (max-width: 995px)" srcset="images/resume-drawer-320_small.jpg">
+              <source id="logo"media="(min-width: 996px)" srcset="images/resume-drawer-640_medium.jpg">
+              <img id="logo" src="images/resume-drawer.jpg" alt="Logo picture of a drawer titled Resume. ">
+          </picture>
+            <!-- credit shutterstock.com -->
           </div>
           <div class="col-md-8">
             <h1 id="name">Michael A. Fischer</h1>
@@ -34,37 +37,49 @@
         </div> 
         <hr> 
       </section> <!-- class top -->
-
       <section class="media">
         <div  class="row">
           <div id="mainPic" class="col-md-12">
-            <img id="logo" src="http://placehold.it/1200x300" alt="Generic placeholder image">
+            <picture>
+              <source media="(min-width: 100px) and (max-width: 320px)" srcset="images/indianapolis-skyline-320_small.jpg">
+              <source media="(max-width: 640px)" srcset="images/indianapolis-skyline.jpg">
+              <img id="mImgPic" src="images/indianapolis-skyline.jpg" alt="Indianapolis Skyline from the War Memorial">
+            </picture>
           </div>
       </section> <!--   -->  
-
       <section class="featuredWork">
         <div class="row">
         <div class="col-md-12">
             <h2 id="subtitle">Featured Work</h2>
         </div>  
         <div id="image" class="col-md-4">
-          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+          <picture>
+              <img class="img-circle pic" src="images/code.jpeg"alt="Image of code">
+          </picture>
+          <!-- from website http://www.coca-colacompany.com/stories/program-or-perish-why-everyone-should-learn-to-code -->
           <h3 id="fw">APPIFY</h3>
           <p id="fw">https://github.com/udacity/Appify/</p>
         </div><!-- /.col-lg-4 -->
-        <div id="image" class="col-md-4">
-          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+        <div id="pic" class="col-md-4">
+          <picture>
+              <source media="(min-width: 320px)" srcset="images/sunflower-320_small.jpg">
+              <source media="(min-width: 640px)" srcset="images/sunflower-640_medium.jpg">
+              <source media="(min-width: 1024px)" srcset="images/sunflower.jpg">   
+              <img class="img-circle pic" src="images/sunflower.jpg"alt="Generic placeholder image">
+          </picture>
           <h3 id="fw">SUNFLOWER</h3>
           <p id="fw">https://github.com/udacity/Sunflower/</p>          
         </div><!-- /.col-lg-4 -->
-        <div id="image" class="col-md-4">
-          <img class="img-circle" src="http://placehold.it/140x140"alt="Generic placeholder image">
+        <div id="pic" class="col-md-4">
+          <picture>
+              <img class="img-circle pic" src="images/bokehcat.jpeg"alt="Bokeh is a Japanese term for the blurring effect in a picture. The image is a bokeh with an in focused cat.">
+          </picture>
           <h3 id="fw">BOKEH</h3>
           <p id="fw">https://github.com/udacity/Bokeh/</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+      <hr>
       </section> <!-- class featuredWork -->  
-
       <section class="footer">
         <div id="social">
           <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
@@ -74,7 +89,6 @@
         </div>
         <br><br>
       </section>  <!-- class footer --> 
-   
     </div> <!-- class container-fluid -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
