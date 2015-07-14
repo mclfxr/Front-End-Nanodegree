@@ -1,99 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Project 1 Build a portfolio site</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet"> 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container-fluid">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>Project 1 Build a portfolio site</title>
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+   <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"rel="stylesheet" type="text/css">
+   <link href="css/main.css" rel="stylesheet"> 
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+<body>
+   <div class="container-fluid">
+      <!--TODO: Add Top section -->
       <section class="top">
-        <div class="row">
-          <div class="col-md-4">
-            <picture id="logo">
-              <source id="logo" media="(min-width: 100) and (max-width: 995px)" srcset="images/resume-drawer-320_small.jpg">
-              <source id="logo"media="(min-width: 996px)" srcset="images/resume-drawer-640_medium.jpg">
-              <img id="logo" src="images/resume-drawer.jpg" alt="Logo picture of a drawer titled Resume. ">
-          </picture>
-            <!-- credit shutterstock.com -->
-          </div>
-          <div class="col-md-8">
-            <h1 id="name">Michael A. Fischer</h1>
-            <p id="positionTitle">Front-End Developer</p>
-          </div> 
-        </div> 
-        <hr> 
+         <div class="row">
+            <!--TODO: Add Logo image-->
+            <div class="col-md-4">
+               <picture class="logo">
+                  <source class="logo" media="(min-width: 100w) and (max-width: 995px)" srcset="images/resume-drawer-320_small.jpg">
+                  <source class="logo" media="(min-width: 996px)" srcset="images/resume-drawer-640_medium.jpg">
+                  <img class="logo" src="images/resume-drawer.jpg" alt="Logo picture of a drawer titled Resume. ">
+               </picture>
+               <!-- credit shutterstock.com -->
+            </div>
+            <div class="nav-bar">
+            </div>   
+            <!--TODO: Add name and position title -->
+            <div class="col-md-8">
+               <h1 id="name">Michael A. Fischer</h1>
+               <p id="positionTitle">Front-End Developer</p>
+               <div class="nav">
+                  <!--TODO: Add Nav Bar -->               
+               </div>   
+            </div>             
+         </div> 
+         <hr> 
       </section> <!-- class top -->
-      <section class="media">
-        <div  class="row">
-          <div id="mainPic" class="col-md-12">
-            <picture>
-              <source media="(min-width: 100px) and (max-width: 320px)" srcset="images/indianapolis-skyline-320_small.jpg">
-              <source media="(max-width: 640px)" srcset="images/indianapolis-skyline.jpg">
-              <img id="mImgPic" src="images/indianapolis-skyline.jpg" alt="Indianapolis Skyline from the War Memorial">
-            </picture>
-          </div>
+      <!--TODO: Add main picture Section -->
+      <section class="main-picture">
+         <div class="row">
+            <!--TODO: Add main picture image -->
+            <!--TODO: Replace main-picture with the Bootstrap Carousel template-->
+            <div class="col-md-12">
+               <picture>
+                  <source media="(min-width: 100px) and (max-width: 320px)" srcset="images/indianapolis-skyline-320_small.jpg">
+                  <source media="(max-width: 640px)" srcset="images/indianapolis-skyline.jpg">
+                  <img class="main-pic" src="images/indianapolis-skyline.jpg" alt="Indianapolis Skyline from the War Memorial">
+               </picture>
+            </div>
+         </div>  
       </section> <!--   -->  
+      <!--TODO: Add feature work section -->
+      <!-- TODO: Add Modals for each picture/project detailing project -->
       <section class="featuredWork">
-        <div class="row">
-        <div class="col-md-12">
-            <h2 id="subtitle">Featured Work</h2>
-        </div>  
-        <div id="image" class="col-md-4">
-          <picture>
-              <img class="img-circle pic" src="images/code.jpeg"alt="Image of code">
-          </picture>
-          <!-- from website http://www.coca-colacompany.com/stories/program-or-perish-why-everyone-should-learn-to-code -->
-          <h3 id="fw">APPIFY</h3>
-          <p id="fw">https://github.com/udacity/Appify/</p>
-        </div><!-- /.col-lg-4 -->
-        <div id="pic" class="col-md-4">
-          <picture>
-              <source media="(min-width: 320px)" srcset="images/sunflower-320_small.jpg">
-              <source media="(min-width: 640px)" srcset="images/sunflower-640_medium.jpg">
-              <source media="(min-width: 1024px)" srcset="images/sunflower.jpg">   
-              <img class="img-circle pic" src="images/sunflower.jpg"alt="Generic placeholder image">
-          </picture>
-          <h3 id="fw">SUNFLOWER</h3>
-          <p id="fw">https://github.com/udacity/Sunflower/</p>          
-        </div><!-- /.col-lg-4 -->
-        <div id="pic" class="col-md-4">
-          <picture>
-              <img class="img-circle pic" src="images/bokehcat.jpeg"alt="Bokeh is a Japanese term for the blurring effect in a picture. The image is a bokeh with an in focused cat.">
-          </picture>
-          <h3 id="fw">BOKEH</h3>
-          <p id="fw">https://github.com/udacity/Bokeh/</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-      <hr>
+         <div class="row">
+            <div class="col-md-12">
+               <h2 id="subtitle">Featured Work</h2>
+            </div>  
+            <div class="col-md-4">
+               <picture>
+                  <img class="img-circle fw-pic" src="images/code.jpeg" alt="Image of code">
+               </picture>
+               <!-- Picture credit from website http://www.coca-colacompany.com/stories/program-or-perish-why-everyone-should-learn-to-code -->
+               <h3 class="h3-cntr">APPIFY</h3>
+               <p class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+               </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4">
+               <picture>
+                  <source media="(min-width: 320px)" srcset="images/sunflower-320_small.jpg">
+                  <source media="(min-width: 640px)" srcset="images/sunflower-640_medium.jpg">
+                  <source media="(min-width: 1024px)" srcset="images/sunflower.jpg">   
+                  <img class="img-circle fw-pic" src="images/sunflower.jpg" alt="Generic placeholder image">
+               </picture>
+               <h3 class="h3-cntr">SUNFLOWER</h3>
+               <p  class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+               </p>          
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4">
+               <picture>
+                  <img class="img-circle fw-pic" src="images/bokehcat.jpeg" alt="Bokeh is a Japanese term for the blurring effect in a picture. The image is a bokeh with an in focused cat.">
+               </picture>
+               <h3 class="h3-cntr">BOKEH</h3>
+               <p class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+               </p>
+            </div><!-- /.col-lg-4 -->
+         </div><!-- /.row -->
+         <hr>
       </section> <!-- class featuredWork -->  
+      <!-- Footer section -->
       <section class="footer">
-        <div id="social">
-          <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook">Facebook</a>
-          <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a>
-          <a href="http://digg.com/submit?phase=2&amp;url=https%3A%2F%2Fgithub.com%2Fudacity%2Fresponsive-images&amp;title=Udacity%20nano%20course%3A%20Responsive%20Images&amp;bodytext=Responsive%20images%20for%20your%20sites%20and%20web%20apps&amp;topic=tech_news" class="zocial-digg">Digg</a>
-        </div>
-        <br><br>
+         <div class="social">
+         <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
+         <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook">Facebook</a>
+         <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a>
+         <a href="http://digg.com/submit?phase=2&amp;url=https%3A%2F%2Fgithub.com%2Fudacity%2Fresponsive-images&amp;title=Udacity%20nano%20course%3A%20Responsive%20Images&amp;bodytext=Responsive%20images%20for%20your%20sites%20and%20web%20apps&amp;topic=tech_news" class="zocial-digg">Digg</a>
+         </div>
+         <br><br>
       </section>  <!-- class footer --> 
-    </div> <!-- class container-fluid -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+   </div> <!-- class container-fluid -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
-
