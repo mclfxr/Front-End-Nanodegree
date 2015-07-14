@@ -36,7 +36,7 @@ body {
 }
 
 .position-title {
-	font-weight:100;
+	font-weight: darker;
 	font-family: "Roboto Slab", serif;
 	color: #747704;
 	text-align: right;
@@ -62,7 +62,7 @@ hr {
 	color: #747704;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 30px 17px 0;
 }
 
 .li-nav {
