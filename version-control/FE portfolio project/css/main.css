@@ -1,75 +1,106 @@
+
 /* CSS FILE */
 [class*="zocial-"]:before {
-  color: LightSeaGreen;
-  display: inline-block;
-  font-family: 'zocial', sans-serif;
-  text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
+	color: LightSeaGreen;
+	display: inline-block;
+	font-family: 'zocial', sans-serif;
+	text-shadow: 3px 3px 3px #aaa;
+	width: 2em;
 }
+
 body {
 	font-family: 'Roboto Slab', serif;
 	color: #747704;
-	/*background-color: #D1D1AB;*/
+	background-color: #d1d1ab;
 }
-div#pic {
-	text-align: center;
-}
-img#logo, .source#logo {
-	padding-top: 10px;
-	padding-bottom: 10px;
+
+/*********************************  
+*
+*  Top Section
+*
+**********************************/
+.logo {
+	padding: 10px 0 10px;
 	width: 50%;
 	height: 25%;
 }
-img#mImgPic {
-	width: 100%;
-	height: 33%;
-}
-.pic {
-	&:extend(.img-circle);
-	width: 75%;
-	height: 100%;
-}
+
 h1#name {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	color: #747704;
 	padding-top: 9px;
 	margin: 0;
 	text-align: right;	
 }
-h1#name {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 100;
-	color: #747704;
-}
+
 p#positionTitle {
 	font-family: 'Roboto Slab', serif;
 	color: #747704;
+	text-align: right;
 }
+
 hr {
 	margin-top: 0;
 }
+
+/*********************************  
+*
+*  Main Picture Section
+*
+**********************************/
+.main-pic {
+	text-align: center;
+	width: 100%;
+	height: 33%;		
+}
+
+/*********************************  
+*
+*  Featured Work Section
+*
+**********************************/
 h2#subtitle{
 	text-align: left;
-	font-weight: 300;
-	color: #BCBBBB;
+	font-weight: 100;
+	color: LightSeaGreen;
 }
-h3#fw {
+
+.fw-pic {
+	width: 100%;
+	height: 50%;
 	text-align: center;
 }
-p {
+
+.h3-cntr {
+	text-align: center;
+}
+
+.p-fw {
 	text-align: right;
 	margin-bottom: 20px;
-}
-p#fw {
 	text-align: center;
 }
-div#mainPic {
-	text-align: center;
+
+a {
+	text-decoration: none;
+	color: LightSeaGreen;
+	
 }
-div#image {
-	text-align: center;
-	font-weight: 100;
+
+a.a-fw {
 	color: #747704;
+	text-decoration: inherit;
+	font-weight: lighter;
 }
-div#social {
+
+/*********************************  
+*
+*  Footer Section
+*
+**********************************/
+.social {
 	text-align: center;
 	line-height: 2em;
 }
+
