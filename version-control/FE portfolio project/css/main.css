@@ -1,15 +1,15 @@
 
 /* CSS FILE */
 [class*="zocial-"]:before {
-	color: LightSeaGreen;
+	color: lightseagreen;
 	display: inline-block;
-	font-family: 'zocial', sans-serif;
+	font-family: "zocial", sans-serif;
 	text-shadow: 3px 3px 3px #aaa;
 	width: 2em;
 }
 
 body {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Roboto Slab", serif;
 	color: #747704;
 	background-color: #d1d1ab;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 h1#name {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Roboto Slab", serif;
 	font-weight: 100;
 	color: #747704;
 	padding-top: 9px;
@@ -35,7 +35,7 @@ h1#name {
 }
 
 p#positionTitle {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Roboto Slab", serif;
 	color: #747704;
 	text-align: right;
 }
@@ -63,7 +63,7 @@ hr {
 h2#subtitle{
 	text-align: left;
 	font-weight: 100;
-	color: LightSeaGreen;
+	color: lightseagreen;
 }
 
 .fw-pic {
@@ -84,7 +84,7 @@ h2#subtitle{
 
 a {
 	text-decoration: none;
-	color: LightSeaGreen;
+	color: lightseagreen;
 	
 }
 
