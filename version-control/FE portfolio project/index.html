@@ -20,10 +20,8 @@
 </head>
 <body>
    <div class="container-fluid">
-      <!--TODO: Add Top section -->
       <header class="top">
          <div class="row">
-            <!--TODO: Add Logo image-->
             <div class="col-md-4">
                <picture class="logo">
                   <source class="logo" media="(max-width: 995px)" srcset="images/resume-drawer-320_small.jpg">
@@ -32,78 +30,75 @@
                </picture>
                <!-- credit shutterstock.com -->
             </div>
-            <!--TODO: Add name and position title -->
             <div class="col-md-8">
                <p class="name">Michael A. Fischer</p>
                <p class="position-title">Front-End Developer</p>
             </div>
             <div class="nav">
                <ul class="ul-nav">
-                  <li class="li-nav"><a class="a-nav" href="#">| Resume </a></li>
-                  <li class="li-nav"><a class="a-nav" href="#">| Projects </a></li>
+                  <li class="li-nav"><a class="a-nav" href="resume.html">| Resume </a></li>
+                  <li class="li-nav"><a class="a-nav" href="projects.html">| Projects </a></li>
                   <li class="li-nav"><a class="a-nav" href="contact.html">| Contact |</a></li>
+               </ul>
             </div>
          </div>
-         <hr>
       </header> <!-- class top -->
-      <!--TODO: Add main picture Section -->
-      <main>
-         <h2 class="main-picture">
-            <div class="row">
-               <!--TODO: Add main picture image -->
-               <!--TODO: Replace main-picture with the Bootstrap Carousel template-->
-               <div class="col-md-12">
-                  <picture>
-                     <source media="(max-width: 320px)" srcset="images/Indianapolis-Skyline-320_small.jpg">
-                     <source media="(max-width: 996px)" srcset="images/Indianapolis-Skyline-640_medium.jpg">
-                     <img class="main-pic" src="images/Indianapolis-Skyline.jpg" alt="Indianapolis Skyline from the War Memorial">
-                  </picture>
-               </div>
+      <hr>
+      <div class="main-image-section">
+         <!--TODO: Replace main-picture with the Bootstrap Carousel template-->
+         <div class="row">
+            <div class="col-md-12">
+               <picture>
+                  <source media="(max-width: 320px)" srcset="images/Indianapolis-Skyline-320_small.jpg">
+                  <source media="(max-width: 996px)" srcset="images/Indianapolis-Skyline-640_medium.jpg">
+                  <img class="main-pic" src="images/Indianapolis-Skyline.jpg" alt="Indianapolis Skyline from the War Memorial">
+               </picture>
             </div>
-         </h2> <!--   -->
-         <!--TODO: Add feature work section -->
+         </div>
+
+      </div>
          <!-- TODO: Add Modals for each picture/project detailing project -->
-         <h3 class="featuredWork">
-            <div class="row">
-               <div class="col-md-12">
-                  <p class="subtitle">Featured Work</p>
-               </div>
-               <div class="col-md-4">
-                  <picture>
-                     <img class="img-circle code-image" src="images/code.jpeg" alt="Image of code">
-                  </picture>
-                  <!-- Picture credit from website http://www.coca-colacompany.com/stories/program-or-perish-why-everyone-should-learn-to-code -->
-                  <p class="p-center">APPIFY</p>
-                  <p class="p-fw">
-                     <a class="a-fw" href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
-                  </p>
-               </div><!-- /.col-lg-4 -->
-               <div class="col-md-4">
-                  <picture>
-                     <source media="(min-width: 320px)" srcset="images/Sunflower-320_small.jpg">
-                     <source media="(min-width: 640px)" srcset="images/Sunflower-640_medium.jpg">
-                     <source media="(min-width: 1024px)" srcset="images/Sunflower.jpg">
-                     <img class="img-circle fw-pic" src="images/Sunflower.jpg" alt="Picture of a sunflower.">
-                  </picture>
-                  <p class="p-center">SUNFLOWER</p>
-                  <p  class="p-fw">
-                     <a class="a-fw" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
-                  </p>
-               </div><!-- /.col-lg-4 -->
-               <div class="col-md-4">
-                  <picture>
-                     <img class="img-circle fw-pic" src="images/bokehcat.jpeg" alt="Bokeh is a Japanese term for the blurring effect in a picture. The image is a bokeh with an in focused cat.">
-                  </picture>
-                  <p class="p-center">BOKEH</p>
-                  <p class="p-fw">
-                     <a class="a-fw" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
-                  </p>
-               </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            <hr>
-         </h3> <!-- class featuredWork -->
-      </main>
-      <!-- Footer section -->
+      <div class="featuredWork">
+         <div class="row">
+            <div class="col-md-12">
+               <p class="subtitle">Featured Work</p>
+            </div>
+            <div class="col-md-4">
+               <picture>
+                  <img class="img-circle code-image" src="images/code.jpeg" alt="Image of code">
+               </picture>
+               <!-- Picture credit from website http://www.coca-colacompany.com/stories/program-or-perish-why-everyone-should-learn-to-code -->
+               <p class="p-center">APPIFY</p>
+               <p class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+               </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4">
+               <picture>
+                  <source media="(min-width: 320px)" srcset="images/Sunflower-320_small.jpg">
+                  <source media="(min-width: 640px)" srcset="images/Sunflower-640_medium.jpg">
+                  <source media="(min-width: 1024px)" srcset="images/Sunflower.jpg">
+                  <img class="img-circle fw-pic" src="images/Sunflower.jpg" alt="Picture of a sunflower.">
+               </picture>
+               <p class="p-center">SUNFLOWER</p>
+               <p  class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+               </p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-md-4">
+               <picture>
+                  <img class="img-circle fw-pic" src="images/bokehcat.jpeg" alt="Bokeh is a Japanese term for the blurring effect in a picture. The image is a bokeh with an in focused cat.">
+               </picture>
+               <p class="p-center">BOKEH</p>
+               <p class="p-fw">
+                  <a class="a-fw" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+               </p>
+            </div><!-- /.col-lg-4 -->
+         </div>
+      </div> <!-- class featuredWork -->
+      <hr>
+         <!-- /.row -->
+           <!-- Footer section -->
       <footer class="footer">
          <div class="social">
             <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
