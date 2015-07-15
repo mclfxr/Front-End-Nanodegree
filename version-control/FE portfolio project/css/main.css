@@ -26,9 +26,7 @@ body {
 }
 
 .name {
-	font-family: "Roboto Slab", serif;
-	font-weight: 100;
-	font-size: 200%;
+	font: 100 200% "Roboto Slab", serif;;
 	color: #747704;
 	padding-top: 9px;
 	margin: 0;
@@ -36,8 +34,9 @@ body {
 }
 
 .position-title {
-	font-weight: 300;
-	font-family: "Roboto Slab", serif;
+	font: 400 100% "Roboto Slab", serif;
+	/*font-weight: 300;
+	font-family: "Roboto Slab", serif; */
 	color: #747704;
 	text-align: right;
 	margin: 0;
@@ -68,8 +67,7 @@ hr {
 }
 
 .a-nav {
-	font-family: "Roboto Slab", serif;
-	font-weight: 400;
+	font: 600 100% "Roboto Slab", sans-serif;
 	color: #747704;
 }
 
@@ -92,8 +90,7 @@ hr {
 **********************************/
 .subtitle {
 	text-align: left;
-	font-size: 200%;
-	font-weight: 100;
+	font: 100 200% "Roboto Slab", sans-serif;
 	color: #747704;
 }
 
